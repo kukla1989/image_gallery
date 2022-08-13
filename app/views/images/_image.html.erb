@@ -3,14 +3,12 @@
     <strong>Name:</strong>
     <%= image.name %>
   </p>
-
   <p>
     <strong>Author:</strong>
     <%= image.author %>
   </p>
   <% if image.paint.attached? %>
-    <img src="<%= url_for(image.paint) %>" >
-    nsdsdddddddddddd
+    <%= image_tag image.paint %>
   <% end %>
 
 
