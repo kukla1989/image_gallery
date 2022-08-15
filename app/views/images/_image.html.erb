@@ -8,6 +8,7 @@
     <%= image.author %>
   </p>
   <% if image.paint.attached? %>
+    <%= image_tag image.paint.thumb.url %>
     <%= image_tag image.paint %>
   <% end %>
 
